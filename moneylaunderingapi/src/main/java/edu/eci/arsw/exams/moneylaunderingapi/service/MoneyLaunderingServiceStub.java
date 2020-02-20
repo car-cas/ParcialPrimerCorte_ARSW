@@ -47,7 +47,7 @@ public class MoneyLaunderingServiceStub implements MoneyLaunderingService {
                 return i;
             }
         }
-        throw new Exception("Prime {"+accountId +"} does not exist");
+        throw new Exception("accountId {"+accountId +"} does not exist");
     }
 
     @Override
