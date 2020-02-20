@@ -32,7 +32,6 @@ public class MoneyLaundering {
         amountOfFilesProcessed.set(0);
         List<File> transactionFiles = getTransactionFileList();
         amountOfFilesTotal = transactionFiles.size();
-
         for(File transactionFile : transactionFiles) {
             int threads = 5;
             List<Transaction> transactions = transactionReader.readTransactionsFromFile(transactionFile);
